@@ -13,10 +13,6 @@ export const headerData = {
           text: 'Startup',
           href: getPermalink('/landing/startup'),
         },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/landing/mobile-app'),
-        },
       ],
     },
     {
