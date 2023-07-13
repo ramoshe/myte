@@ -6,8 +6,11 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--aw-color-primary)',
+        primarylt: 'var(--aw-color-primary-light)',
         secondary: 'var(--aw-color-secondary)',
+        secondarylt: 'var(--aw-color-secondary-light)',
         accent: 'var(--aw-color-accent)',
+        accentlt: 'var(--aw-color-accent-light)',
       },
       fontFamily: {
         sans: ['var(--aw-font-sans)', ...defaultTheme.fontFamily.sans],
