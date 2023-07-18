@@ -1,13 +1,13 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'Makurr',
+  name: 'Myte by theRamoShe',
 
-  origin: 'https://makurr.com',
+  origin: 'https://myte.theramoshe.com',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'Makurr — Elevate your online brand',
+  title: 'Myte by theRamoShe — Elevate your online brand',
   description:
     'Tired of the limited customzation of link websites and expensive selling platforms? Makurr is your solution for taking your online brand to the next level.',
   defaultImage: defaultImage,
@@ -28,7 +28,7 @@ const CONFIG = {
   googleSiteVerificationId: 'orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M',
 
   blog: {
-    disabled: false,
+    disabled: true,
     postsPerPage: 4,
 
     post: {

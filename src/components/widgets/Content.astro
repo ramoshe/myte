@@ -38,7 +38,7 @@ const {
         <div class="mb-10 md:mx-auto text-center md:mb-12 max-w-3xl">
           {highlight && (
             <p
-              class="text-base text-primary dark:text-stone-200 font-semibold tracking-wide uppercase"
+              class="text-base text-secondary dark:text-secondarylt font-semibold tracking-wide uppercase"
               set:html={highlight}
             />
           )}
@@ -67,8 +67,8 @@ const {
               {items.map(({ title: title2, description, icon }) => (
                 <div class="flex">
                   <div class="flex-shrink-0">
-                    <div class="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-stone-50">
-                      <Icon name={icon ? icon : 'tabler:check'} class="w-5 h-5" />
+                    <div class="flex h-7 w-7 items-center justify-center rounded-full bg-primary dark:bg-primarylt text-stone-50 dark:text-white">
+                      <Icon name={icon ? icon : 'tabler:arrow-right'} class="w-5 h-5" />
                     </div>
                   </div>
                   <div class="ml-4">

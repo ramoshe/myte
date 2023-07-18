@@ -8,9 +8,9 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import LatestPosts from '~/components/blog/LatestPosts.astro';
+// import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+// import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const meta = {
@@ -25,22 +25,19 @@ const meta = {
 
   <Hero
     callToAction={{ text: 'Get started', href: '/contact', icon: 'tabler:arrow-big-right-lines' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
+    callToAction2={{ text: 'How It Works', href: '#steps' }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">Elevate</span> your online brand with a custom built website
+      Elevate your online brand with a <span class="text-secondary dark:text-secondarylt highlight">custom built</span> website
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span>Site builders, link pages, and other platforms offer a quick and easy way to get online, but limit your ability to truly represent your brand. To truly take things to the next level you need a custom built website that hilights the full uniqueness your brand and fits your specific business needs.</span
+        <span>Site builders, link pages, and other platforms offer a quick and easy way to get started, but limit your ability to truly represent your brand. To take things to the next level you need a custom built website that highlights the full uniqueness your brand and fits your specific business needs.</span
       >
-      <!-- <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span> Suitable for Startups,
-      Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs. -->
     </Fragment>
 
     <Fragment slot="image">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dsTXcSeAZq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%"></iframe>
+      <iframe width="560" height="580" src="https://www.youtube.com/embed/dsTXcSeAZq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width:100%"></iframe>
     </Fragment>
   </Hero>
 
@@ -51,47 +48,47 @@ const meta = {
   <!-- Features Widget *************** -->
 
   <Features
-    highlight="Features"
-    title="The Shortcomings of Simple Platforms"
-    subtitle="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."
+    highlight="The Problem"
+    title="Quick and Easy Comes with Sacrifices"
+    subtitle="Platforms that make it easy to get your brand online also limit your ability to truly let your brand shine and fit the needs of your business."
     items={[
       [
         {
-          title: 'Astro + Tailwind CSS Integration',
+          title: 'Limited Customization',
           description:
-            'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+            'These platforms may have limitations in terms of functionality and features. If you have complex business needs or require advanced functionality, site builders might not be sufficiently flexible or offer the features you need.',
           icon: 'tabler:brand-tailwind',
         },
         {
-          title: 'Ready-to-use Components',
+          title: 'High Learning Curves',
           description:
-            'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+            'Adding any kind of customization often requires digging through settings and changing templates in ways that require deep knowledge about the platform which takes time to gain, and depends on availibility of learning resources.',
           icon: 'tabler:components',
         },
         {
-          title: 'Best Practices',
+          title: 'SEO Challenges',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            'Search engine optimization (SEO) is essential for improving your website\'s visibility in search engine results. Some site builders may have limitations which can hinder your ability to fully optimize your website.',
           icon: 'tabler:list-check',
         },
       ],
       [
         {
-          title: 'Excellent Page Speed',
+          title: 'Expensive Fees',
           description:
-            'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+            'Despite often having low entry costs, there are often limitations in free or basic plans, with access more advanced features requiring you to upgrade to a paid subscription, which can increase your expenses over time.',
           icon: 'tabler:rocket',
         },
         {
-          title: 'Search Engine Optimization (SEO)',
+          title: 'Overcrowding & Competition',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            'Being on a platform that has its own traffic can be an advantage, but it also often puts your business and brand in direct competition with other brands and product that may be simmilar to yours, effectively pulling customers away.',
           icon: 'tabler:arrows-right-left',
         },
         {
-          title: 'Open to new ideas and contributions',
+          title: 'Platform Dependancy',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.',
+            'Being tied to a specific platform means that if terms change or you decide to switch you\'ll have to go through the time-consuming and challenging process of migrating your content and potentially reconfiguring your entire website.',
           icon: 'tabler:bulb',
         },
       ],
@@ -101,8 +98,8 @@ const meta = {
   <!-- Content Widget **************** -->
 
   <Content
-    highlight="Inside template"
-    title="The Differnce of a Custom Built Site"
+    highlight="The Solution"
+    title="A Custom Built Site Lets Your Brand Shine"
     items={[
       {
         title: 'Per ei quaeque sensibus',
@@ -166,29 +163,29 @@ const meta = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with Makurr."
+    title="Get your dream website up and running in no time with Myte by theRamoShe"
     items={[
       {
         title: 'Step 1: <span class="font-medium">Consult</span>',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-        icon: 'tabler:package',
+        icon: 'tabler:messages',
       },
       {
-        title: 'Step 2: <span class="font-medium">Development</em>',
+        title: 'Step 2: <span class="font-medium">Design</em>',
         description:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Maintenance</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
         icon: 'tabler:paint',
       },
       {
+        title: 'Step 3: <span class="font-medium">Build</span>',
+        description:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
+        icon: 'tabler:apps',
+      },
+      {
         title: 'Ready!',
-        icon: 'tabler:check',
+        icon: 'tabler:device-desktop',
       },
     ]}
     image={{
@@ -330,18 +327,17 @@ const meta = {
 
   <CallToAction
     callToAction={{
-      text: 'Get template',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:download',
+      text: 'Get started',
+      href: '/contact',
+      icon: 'tabler:arrow-big-right-lines',
     }}
   >
     <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Myte <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">by theRamoShe</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Don't waste any more time on all the other platforms. <br class="hidden md:inline" />Get your custom website build started!
     </Fragment>
   </CallToAction>
 </Layout>
