@@ -13,14 +13,6 @@ const meta = {
 ---
 
 <Layout {meta}>
-  <Fragment slot="header">
-    <Header
-      {...headerData}
-      showRssFeed
-      showToggleTheme
-      position="left"
-    />
-  </Fragment>
 
   <!-- Hero2 Widget ******************* -->
 
@@ -32,6 +24,9 @@ const meta = {
     </Fragment>
   </Hero>
 
-<!-- TODO Add code from Termageddon -->
+  <Fragment client:load>
+    <div class="mx-10 lg:mx-40 mb-60 termageddon" id="policy" data-policy-key="TkhkWVlqQkxLMmhyYmpGdlMyYzlQUT09" data-extra="h-align=left&no-title=true&table-style=accordion">Please wait while the policy is loaded. If it does not load, please <a rel="nofollow" href="https://app.termageddon.com/api/policy/TkhkWVlqQkxLMmhyYmpGdlMyYzlQUT09?h-align=left&no-title=true&table-style=accordion" target="_blank">click here</a>.</div>
+    <script is:inline src="https://app.termageddon.com/js/termageddon.js"></script>
+  </Fragment>
 
 </Layout>

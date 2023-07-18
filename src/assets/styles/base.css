@@ -60,6 +60,25 @@
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
 
+/* added by me */
+
 .feat2card {
   width: 30%;
+}
+
+.termageddon h2 {
+  font-size: 2em;
+  margin-top: 1.4em;
+  margin-bottom: .4em;
+}
+.termageddon p {
+  margin-bottom: 1em;
+}
+.termageddon ol {
+  margin-bottom: 1em;
+}
+.termageddon li {
+  list-style-type: decimal;
+  margin-left: 3em;
+  margin-bottom: .5em;
 }
