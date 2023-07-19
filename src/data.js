@@ -2,7 +2,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [],
-  actions: [{ type: 'button', text: 'Get in Touch', href: '/contact' }],
+  actions: [{ type: 'button', text: 'Get Started', href: '/contact' }],
 };
 
 export const footerData = {
