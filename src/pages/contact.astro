@@ -1,10 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Header from '~/components/widgets/Header.astro';
-import Hero2 from '~/components/widgets/Hero2.astro';
-
-import { headerData } from '~/data';
+import Form from '~/components/widgets/Form.astro';
 
 const meta = {
   title: 'Contact',
@@ -15,25 +12,24 @@ const meta = {
 
   <!-- Hero2 Widget ******************* -->
 
-  <Hero2
-    callToAction={{ text: 'Get template', href: 'https://github.com/onwidget/astrowind', icon: 'tabler:download' }}
-    callToAction2={{ text: 'Learn more', href: '#features' }}
+  <Form
     image={{ src: import('~/assets/images/undraw_personal_email_re_4lx7.png'), alt: 'Contact Image' }}
   >
     <Fragment slot="title">
-      So you wanna <br />
-      <span class="text-primary dark:text-primarylt highlight"> Get Started</span> with your site today?
+      So you wanna <span class="text-primary dark:text-primarylt highlight">Get Started</span> with your custom site today?
     </Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
+    <Fragment slot="subtitle" client:load>
+      <span>
         <span class="font-semibold">Fill out the form below</span> with a little info about yourself and your business so that we can get this train rolling.
       </span>
-    </Fragment>
-  </Hero2>
 
-  <Fragment client:load>
-    <script is:inline type="text/javascript" src="//mautic.ramoshe.com/form/generate.js?id=4"></script>
-  </Fragment>
+<!-- Contact Form ******************* -->
+      <div id="contactform">
+        <script is:inline type="text/javascript" src="//mautic.ramoshe.com/form/generate.js?id=4"></script>
+      </div>
+
+    </Fragment>
+  </Form>
 
 </Layout>
