@@ -3,7 +3,7 @@ import defaultImage from './assets/images/default.png';
 const CONFIG = {
   name: 'Myte by theRamoShe',
 
-  origin: 'https://myte.theramoshe.com',
+  origin: 'https://myte.site',
   basePathname: '/',
   trailingSlash: false,
 
