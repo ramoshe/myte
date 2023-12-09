@@ -1,7 +1,7 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'Myte by theRamoShe',
+  name: 'MYTE by theRamoShe',
 
   origin: 'https://myte.site',
   basePathname: '/',
