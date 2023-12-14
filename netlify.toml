@@ -1,7 +1,7 @@
 [build]
   publish = "dist"
-  command = "NODE_OPTIONS=--max_old_space_size=4096 astro build --batch=16"
+  command = "NO_IMAGE_OPTIMIZE=true NODE_OPTIONS=--max_old_space_size=4096 astro build"
 [[headers]]
   for = "/assets/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=31536000, immutable"git
