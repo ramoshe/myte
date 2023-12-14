@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "NODE_OPTIONS=--max_old_space_size=4096 astro build --batch=16"
+  command = "npm run build"
 [[headers]]
   for = "/assets/*"
   [headers.values]
